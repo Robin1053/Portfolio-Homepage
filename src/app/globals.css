@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+/* Sanftes Scrollen zu den Anker-Sektionen; Offset für den Sticky-Header. */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
