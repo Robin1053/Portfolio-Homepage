@@ -12,8 +12,8 @@ const theme = createTheme({
     colorSchemes: {
         light: {
             palette: {
-                primary: { main: "#4f46e5" },
-                secondary: { main: "#0891b2" },
+                primary: { main: "#047857" },
+                secondary: { main: "#b45309" },
                 background: {
                     default: "#fafafa",
                     paper: "#ffffff",
@@ -22,8 +22,8 @@ const theme = createTheme({
         },
         dark: {
             palette: {
-                primary: { main: "#818cf8" },
-                secondary: { main: "#22d3ee" },
+                primary: { main: "#34d399" },
+                secondary: { main: "#fbbf24" },
                 background: {
                     default: "#0a0a0a",
                     paper: "#121212",
@@ -31,8 +31,9 @@ const theme = createTheme({
             },
         },
     },
+    // Radius-System: Buttons/Chips 8, Cards 12 (siehe components unten).
     shape: {
-        borderRadius: 12,
+        borderRadius: 8,
     },
     typography: {
         fontFamily: "var(--font-geist-sans), system-ui, sans-serif",
@@ -50,12 +51,12 @@ const theme = createTheme({
         },
         MuiButton: {
             styleOverrides: {
-                root: { borderRadius: 10 },
+                root: { borderRadius: 8 },
             },
         },
         MuiCard: {
             styleOverrides: {
-                root: { borderRadius: 16 },
+                root: { borderRadius: 12 },
             },
         },
     },
