@@ -47,6 +47,7 @@ export default function SiteHeader() {
                         variant="h6"
                         sx={{
                             fontWeight: 700,
+                            fontFamily: "var(--font-accent), cursive",
                             color: "text.primary",
                             textDecoration: "none",
                             flexGrow: 1,

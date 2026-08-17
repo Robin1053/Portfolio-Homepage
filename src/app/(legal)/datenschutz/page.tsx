@@ -370,6 +370,28 @@ export default function DatenschutzPage() {
         gesetzliche Bestimmungen – insbesondere gesetzliche
         Aufbewahrungsfristen – bleiben unberührt.
       </p>
+
+      <h3>Schriftarten (lokales Hosting)</h3>
+      <p>
+        Diese Website nutzt zur einheitlichen Darstellung Schriftarten, die
+        lokal auf dem Server dieser Website gehostet werden. Beim Aufruf der
+        Seite werden die Schriftdateien direkt von dieser Website geladen. Eine
+        Verbindung zu Servern von Google oder anderen Drittanbietern findet
+        dabei nicht statt; es werden insoweit keine Daten an Dritte übermittelt.
+      </p>
+
+      <h3>Speicherung der Design-Einstellung (Local Storage)</h3>
+      <p>
+        Diese Website bietet die Möglichkeit, zwischen einem hellen und einem
+        dunklen Design zu wechseln. Wenn Sie diese Einstellung aktiv ändern,
+        wird Ihre Auswahl im Local Storage Ihres Browsers gespeichert, damit sie
+        bei künftigen Besuchen erhalten bleibt. Es handelt sich um eine rein
+        funktionale Speicherung ohne Tracking; es werden keine Daten an uns oder
+        an Dritte übermittelt. Die Speicherung ist für die Bereitstellung dieser
+        von Ihnen ausdrücklich gewünschten Funktion erforderlich (§ 25 Abs. 2
+        Nr. 2 TDDDG) und bedarf daher keiner Einwilligung. Sie können den
+        Eintrag jederzeit über die Einstellungen Ihres Browsers löschen.
+      </p>
     </main>
   );
 }
