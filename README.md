@@ -6,7 +6,7 @@
 [![MUI](https://img.shields.io/badge/MUI-9-007fff?logo=mui&logoColor=white)](https://mui.com/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5-3178c6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![Website](https://img.shields.io/badge/Live-robineb.de-047857)](https://www.robineb.de)
+[![Website](https://img.shields.io/badge/Live-robineb.de-047857)](https://robineb.de)
 
 Persönliche Portfolio-Seite mit Fokus auf **Embedded Software Development**: Firmware und Steuerungssoftware in C und C++, von der Schaltung bis zum getesteten Release.
 
