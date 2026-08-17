@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Roboto, Roboto_Mono, Sour_Gummy } from "next/font/google";
+import { Baloo_2, Roboto, Roboto_Mono } from "next/font/google";
 import { AppRouterCacheProvider } from "@mui/material-nextjs/v16-appRouter";
 import { ThemeProvider } from "@mui/material/styles";
 import Box from "@mui/material/Box";
@@ -21,7 +21,7 @@ const robotoMono = Roboto_Mono({
 });
 
 // Akzent-Font für einzelne Display-Elemente (Logo, Hero-Highlight).
-const sourGummy = Sour_Gummy({
+const baloo = Baloo_2({
   subsets: ["latin"],
   variable: "--font-accent",
 });
@@ -42,7 +42,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     // data-mui-color-scheme-Attribut vor der Hydration.
     <html
       lang="de"
-      className={`${roboto.variable} ${robotoMono.variable} ${sourGummy.variable}`}
+      className={`${roboto.variable} ${robotoMono.variable} ${baloo.variable}`}
       suppressHydrationWarning
     >
       <body>
