@@ -25,7 +25,7 @@ Persönliche Portfolio-Seite mit Fokus auf **Embedded Software Development**: Fi
 | Framework  | Next.js 16 (App Router, Server Components)   |
 | UI         | MUI v9 mit CSS-Variablen-Theming             |
 | Sprache    | TypeScript                                   |
-| Fonts      | Geist & Geist Mono über `next/font`          |
+| Fonts      | Roboto, Roboto Mono & Sour Gummy (Akzent) über `next/font` |
 | CI/CD      | GitHub Actions (Lint + Build bei jedem Push) |
 
 ## Entwicklung

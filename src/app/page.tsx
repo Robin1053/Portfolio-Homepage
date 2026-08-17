@@ -60,7 +60,7 @@ const heroCode: ReadonlyArray<{ text: string; dim?: boolean }> = [
     { text: "}" },
 ];
 
-const monoFont = "var(--font-geist-mono), ui-monospace, monospace";
+const monoFont = "var(--font-roboto-mono), ui-monospace, monospace";
 
 export default function Home() {
     return (
@@ -79,7 +79,13 @@ export default function Home() {
                             </Typography>
                             <Typography variant="h2" component="h1">
                                 Hi, ich bin Robin.{" "}
-                                <Box component="span" sx={{ color: "primary.main" }}>
+                                <Box
+                                    component="span"
+                                    sx={{
+                                        color: "primary.main",
+                                        fontFamily: "var(--font-accent), cursive",
+                                    }}
+                                >
                                     Ich bringe Code auf Hardware.
                                 </Box>
                             </Typography>

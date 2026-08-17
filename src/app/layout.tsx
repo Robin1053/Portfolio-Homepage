@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Roboto, Roboto_Mono, Sour_Gummy } from "next/font/google";
 import { AppRouterCacheProvider } from "@mui/material-nextjs/v16-appRouter";
 import { ThemeProvider } from "@mui/material/styles";
 import Box from "@mui/material/Box";
@@ -10,14 +10,20 @@ import SiteHeader from "@/components/SiteHeader";
 import theme from "@/theme";
 import "./globals.css";
 
-const geist = Geist({
+const roboto = Roboto({
   subsets: ["latin"],
-  variable: "--font-geist-sans",
+  variable: "--font-roboto",
 });
 
-const geistMono = Geist_Mono({
+const robotoMono = Roboto_Mono({
   subsets: ["latin"],
-  variable: "--font-geist-mono",
+  variable: "--font-roboto-mono",
+});
+
+// Akzent-Font für einzelne Display-Elemente (Logo, Hero-Highlight).
+const sourGummy = Sour_Gummy({
+  subsets: ["latin"],
+  variable: "--font-accent",
 });
 
 export const metadata: Metadata = {
@@ -36,7 +42,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     // data-mui-color-scheme-Attribut vor der Hydration.
     <html
       lang="de"
-      className={`${geist.variable} ${geistMono.variable}`}
+      className={`${roboto.variable} ${robotoMono.variable} ${sourGummy.variable}`}
       suppressHydrationWarning
     >
       <body>

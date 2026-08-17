@@ -36,7 +36,7 @@ const theme = createTheme({
         borderRadius: 8,
     },
     typography: {
-        fontFamily: "var(--font-geist-sans), system-ui, sans-serif",
+        fontFamily: "var(--font-roboto), system-ui, sans-serif",
         h1: { fontWeight: 700, letterSpacing: "-0.02em" },
         h2: { fontWeight: 700, letterSpacing: "-0.02em" },
         h3: { fontWeight: 700, letterSpacing: "-0.01em" },
