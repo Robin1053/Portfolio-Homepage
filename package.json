@@ -1,6 +1,6 @@
 {
   "name": "portfolio-homepage",
-  "version": "0.1.0",
+  "version": "1.1.0",
   "private": false,
   "displayName": "Homepage Robineb",
   "homepage": "https://robineb.de",
@@ -9,6 +9,12 @@
     "url": "https://github.com/Robin1053/Portfolio-Homepage.git",
     "type": "git"
   },
+  "author": {
+    "name": "Robineb",
+    "email": "robin.eberle@robineb.de",
+    "url": "https://www.robineb.de"
+  },
+  "readme": "./README.md",
   "scripts": {
     "dev": "next dev",
     "dev:https": "next dev --experimental-https",
