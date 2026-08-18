@@ -22,12 +22,19 @@ const projects = [
         code: "https://github.com/Robin1053/Mui-Utility",
     },
     {
+        title: "VISCA Bridge",
+        description: "VISCA-Bridge: Python-Backend zur Steuerung von PTZ-Kameras über TCP/RS-232, mit automatischem Reconnect und systemd-Deployment auf Raspberry Pi",
+        tech: ["Python", "Serielle Kommunikation", "VISCA"],
+        code: "https://github.com/Robin1053/visca-bridge",
+    },
+    {
         title: "Portfolio & Homepage",
         description:
             "Diese Website, gebaut mit Next.js (App Router), MUI und TypeScript. Mit Dark Mode, CI/CD-Deployment und Versionierung im Footer.",
         tech: ["Next.js", "MUI", "TypeScript"],
         code: "https://github.com/Robin1053/Portfolio-Homepage",
     },
+
 ] as const;
 
 const skillGroups = [
@@ -302,16 +309,14 @@ export default function Home() {
                         spacing={2}
                         sx={{ justifyContent: "center" }}
                     >
-                        {legal.email && (
-                            <Button
-                                variant="contained"
-                                size="large"
-                                startIcon={<MailOutlinedIcon />}
-                                href={`mailto:${legal.email}`}
-                            >
-                                E-Mail schreiben
-                            </Button>
-                        )}
+                        <Button
+                            variant="contained"
+                            size="large"
+                            startIcon={<MailOutlinedIcon />}
+                            href={`mailto:robin.eberle@robineb.de`}
+                        >
+                            E-Mail schreiben
+                        </Button>
                         <Button
                             variant="outlined"
                             size="large"
