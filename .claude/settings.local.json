@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run *)",
+      "Bash(git add *)",
+      "Bash(git commit -s -m 'feat: Portfolio auf Embedded-Software-Fokus umgebaut *)",
+      "Bash(git commit -s -m 'docs: README mit Badges und Projektübersicht aktualisiert *)"
+    ]
+  }
+}
