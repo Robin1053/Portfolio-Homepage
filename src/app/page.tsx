@@ -210,6 +210,7 @@ export default function Home() {
                                         href={project.code}
                                         target="_blank"
                                         rel="noopener noreferrer"
+                                        aria-label={`Code von ${project.title} auf GitHub`}
                                     >
                                         Code
                                     </Button>
