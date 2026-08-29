@@ -2,7 +2,9 @@ name: CI
 
 on:
     push:
-      branches: ['**']
+      # main nicht: dort laeuft der Deploy-Workflow, und da Merges
+      # Fast-Forwards sind, wurde derselbe Commit auf dev schon geprueft.
+      branches-ignore: [main]
 
 jobs:
   build:
