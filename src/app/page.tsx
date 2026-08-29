@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import MailOutlinedIcon from "@mui/icons-material/MailOutlined";
 import Box from "@mui/material/Box";
@@ -12,6 +13,12 @@ import Paper from "@mui/material/Paper";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
 import { legal } from "@/lib/legal";
+
+// Kanonische URL ohne www: Google soll die Apex-Domain als
+// Hauptadresse führen (www liefert denselben Inhalt aus).
+export const metadata: Metadata = {
+  alternates: { canonical: "/" },
+};
 
 const projects = [
     {
