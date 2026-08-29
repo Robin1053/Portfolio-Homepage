@@ -23,7 +23,7 @@ export default function ImpressumPage() {
 
       <h2>Kontakt</h2>
       <p>
-        E-Mail: <a href={`mailto:${legal.email}`}>{legal.email}</a>
+        E-Mail: <a href={`mailto:robin.eberle@robineb.de`}>robin.eberle@robineb.de</a>
       </p>
 
       <h2>Haftung für Inhalte</h2>

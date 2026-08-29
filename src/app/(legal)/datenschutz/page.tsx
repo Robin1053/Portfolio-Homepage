@@ -104,7 +104,7 @@ export default function DatenschutzPage() {
         unsere Weisungen in Bezug auf diese Daten befolgen.
       </p>
       <p>Wir setzen folgende(n) Hoster ein:</p>
-      <p>{legal.hoster}</p>
+      <p>Oracle Cloud Infrastructure Rechenzentrum Frankfurt</p>
 
       <h4>Auftragsverarbeitung</h4>
       <p>
@@ -151,7 +151,7 @@ export default function DatenschutzPage() {
         {legal.city}
       </p>
       <p>
-        E-Mail: <a href={`mailto:${legal.email}`}>{legal.email}</a>
+        E-Mail: <a href={`mailto:robin.eberle@robineb.de`}>robin.eberle@robineb.de</a>
       </p>
       <p>
         Verantwortliche Stelle ist die natürliche oder juristische Person, die
