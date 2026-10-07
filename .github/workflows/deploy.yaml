@@ -30,7 +30,7 @@ jobs:
             ${{ runner.os }}-next-${{ hashFiles('**/package-lock.json') }}-
             ${{ runner.os }}-next-
 
-      - run: npm ci --prefer-offline --no-audit
+      - run: npm ci
 
       - run: npm run build
         env:
