@@ -116,36 +116,32 @@ export default function DatenschutzPage() {
         </a>
       </p>
 
-      {legal.hoster.thirdCountry && (
-        <>
-          <h4>Datenübermittlung in die USA</h4>
-          <p>
-            Die Auslieferung dieser Website erfolgt über ein weltweit verteiltes
-            Servernetz (Content Delivery Network) des Hosters. Dabei können
-            personenbezogene Daten, insbesondere Ihre IP-Adresse, in die USA
-            übermittelt und dort verarbeitet werden.
-          </p>
-          <p>
-            {legal.hoster.name} ist nach dem „EU-US Data Privacy Framework“ (DPF)
-            zertifiziert. Der DPF ist ein Übereinkommen zwischen der Europäischen
-            Union und den USA, der die Einhaltung europäischer
-            Datenschutzstandards bei Datenverarbeitungen in den USA gewährleisten
-            soll. Für die Übermittlung liegt damit ein Angemessenheitsbeschluss
-            der EU-Kommission vor (Art. 45 DSGVO). Ergänzend stützt sich die
-            Übermittlung auf die Standardvertragsklauseln der EU-Kommission
-            (Art. 46 Abs. 2 lit. c DSGVO). Weitere Informationen hierzu erhalten
-            Sie unter{" "}
-            <a
-              href="https://www.dataprivacyframework.gov/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              https://www.dataprivacyframework.gov/
-            </a>
-            .
-          </p>
-        </>
-      )}
+      <h4>Datenübermittlung in die USA</h4>
+      <p>
+        Die Auslieferung dieser Website erfolgt über ein weltweit verteiltes
+        Servernetz (Content Delivery Network) des Hosters. Dabei können
+        personenbezogene Daten, insbesondere Ihre IP-Adresse, in die USA
+        übermittelt und dort verarbeitet werden.
+      </p>
+      <p>
+        {legal.hoster.name} ist nach dem „EU-US Data Privacy Framework“ (DPF)
+        zertifiziert. Der DPF ist ein Übereinkommen zwischen der Europäischen
+        Union und den USA, der die Einhaltung europäischer Datenschutzstandards
+        bei Datenverarbeitungen in den USA gewährleisten soll. Für die
+        Übermittlung liegt damit ein Angemessenheitsbeschluss der
+        EU-Kommission vor (Art. 45 DSGVO). Ergänzend stützt sich die
+        Übermittlung auf die Standardvertragsklauseln der EU-Kommission
+        (Art. 46 Abs. 2 lit. c DSGVO). Weitere Informationen hierzu erhalten Sie
+        unter{" "}
+        <a
+          href="https://www.dataprivacyframework.gov/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          https://www.dataprivacyframework.gov/
+        </a>
+        .
+      </p>
 
       <h4>Auftragsverarbeitung</h4>
       <p>

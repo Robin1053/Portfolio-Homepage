@@ -2,8 +2,8 @@ name: CI
 
 on:
     push:
-      # main nicht: dort laeuft der Deploy-Workflow, und da Merges
-      # Fast-Forwards sind, wurde derselbe Commit auf dev schon geprueft.
+      # main nicht: dort baut und deployt Vercel, und der Stand wurde
+      # vorher auf dem Feature-/dev-Branch schon geprueft.
       branches-ignore: [main]
 
 jobs:
