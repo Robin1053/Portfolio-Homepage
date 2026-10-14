@@ -1,0 +1,45 @@
+name: Release on version bump
+
+"on":
+  pull_request:
+    types:
+      - closed
+    branches:
+      - main
+
+jobs:
+  check-version:
+    # Nur gemergte PRs, nicht einfach geschlossene.
+    if: github.event.pull_request.merged == true
+    runs-on: ubuntu-latest
+    outputs:
+      higher: ${{ steps.compare.outputs.higher }}
+      tag: ${{ steps.compare.outputs.tag }}
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+          fetch-tags: true
+
+      - uses: ./.github/actions/compare-version
+        id: compare
+
+  tag-and-release:
+    needs: check-version
+    if: needs.check-version.outputs.higher == 'true'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      # Legt Tag (auf dem Merge-Commit) und GitHub-Release in einem Schritt an.
+      - name: Tag und GitHub-Release anlegen
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ needs.check-version.outputs.tag }}
+          SHA: ${{ github.event.pull_request.merge_commit_sha }}
+        run: |
+          gh release create "$TAG" \
+            --repo "$GITHUB_REPOSITORY" \
+            --target "$SHA" \
+            --title "$TAG" \
+            --generate-notes

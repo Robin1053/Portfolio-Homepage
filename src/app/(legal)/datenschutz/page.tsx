@@ -104,7 +104,44 @@ export default function DatenschutzPage() {
         unsere Weisungen in Bezug auf diese Daten befolgen.
       </p>
       <p>Wir setzen folgende(n) Hoster ein:</p>
-      <p>Oracle Cloud Infrastructure Rechenzentrum Frankfurt</p>
+      <p>
+        {legal.hoster.name}
+        <br />
+        {legal.hoster.address}
+      </p>
+      <p>
+        Details entnehmen Sie der Datenschutzerklärung des Hosters:{" "}
+        <a href={legal.hoster.privacyUrl} target="_blank" rel="noopener noreferrer">
+          {legal.hoster.privacyUrl}
+        </a>
+      </p>
+
+      <h4>Datenübermittlung in die USA</h4>
+      <p>
+        Die Auslieferung dieser Website erfolgt über ein weltweit verteiltes
+        Servernetz (Content Delivery Network) des Hosters. Dabei können
+        personenbezogene Daten, insbesondere Ihre IP-Adresse, in die USA
+        übermittelt und dort verarbeitet werden.
+      </p>
+      <p>
+        {legal.hoster.name} ist nach dem „EU-US Data Privacy Framework“ (DPF)
+        zertifiziert. Der DPF ist ein Übereinkommen zwischen der Europäischen
+        Union und den USA, der die Einhaltung europäischer Datenschutzstandards
+        bei Datenverarbeitungen in den USA gewährleisten soll. Für die
+        Übermittlung liegt damit ein Angemessenheitsbeschluss der
+        EU-Kommission vor (Art. 45 DSGVO). Ergänzend stützt sich die
+        Übermittlung auf die Standardvertragsklauseln der EU-Kommission
+        (Art. 46 Abs. 2 lit. c DSGVO). Weitere Informationen hierzu erhalten Sie
+        unter{" "}
+        <a
+          href="https://www.dataprivacyframework.gov/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          https://www.dataprivacyframework.gov/
+        </a>
+        .
+      </p>
 
       <h4>Auftragsverarbeitung</h4>
       <p>
@@ -344,6 +381,42 @@ export default function DatenschutzPage() {
       </p>
 
       <h2>4. Datenerfassung auf dieser Website</h2>
+
+      <h3>Cookies</h3>
+      <p>
+        Diese Website setzt keine Cookies und verwendet keine Analyse- oder
+        Tracking-Dienste. Eine Einwilligung (Cookie-Banner) ist daher nicht
+        erforderlich.
+      </p>
+
+      <h3>Server-Log-Dateien</h3>
+      <p>
+        Der Provider der Seiten erhebt und speichert automatisch Informationen
+        in so genannten Server-Log-Dateien, die Ihr Browser automatisch an uns
+        übermittelt. Dies sind:
+      </p>
+      <ul>
+        <li>Browsertyp und Browserversion</li>
+        <li>verwendetes Betriebssystem</li>
+        <li>Referrer URL</li>
+        <li>aufgerufene Seite (URL)</li>
+        <li>Uhrzeit der Serveranfrage</li>
+        <li>IP-Adresse</li>
+      </ul>
+      <p>
+        Eine Zusammenführung dieser Daten mit anderen Datenquellen wird nicht
+        vorgenommen.
+      </p>
+      <p>
+        Die Erfassung dieser Daten erfolgt auf Grundlage von Art. 6 Abs. 1
+        lit. f DSGVO. Wir haben ein berechtigtes Interesse an der technisch
+        fehlerfreien Darstellung, der Optimierung und der Absicherung unserer
+        Website (z.&nbsp;B. Abwehr von Angriffen) – hierzu müssen die
+        Server-Log-Dateien erfasst werden. Die Log-Dateien werden beim unter
+        „Hosting“ genannten Hoster verarbeitet und gelöscht, sobald sie für
+        diese Zwecke nicht mehr erforderlich sind; Einzelheiten zur
+        Speicherdauer ergeben sich aus der Datenschutzerklärung des Hosters.
+      </p>
 
       <h3>Anfrage per E-Mail</h3>
       <p>

@@ -38,7 +38,6 @@ const nextConfig = {
   env: {
     NEXT_PUBLIC_APP_VERSION: version,
   },
-  output: "standalone",
   allowedDevOrigins: ['pc-robin.dc.home.arpa'],
   headers() {
     return [
