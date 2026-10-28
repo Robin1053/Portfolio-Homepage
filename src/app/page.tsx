@@ -12,10 +12,7 @@ import Grid from "@mui/material/Grid";
 import Paper from "@mui/material/Paper";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
-import { legal } from "@/lib/legal";
 
-// Kanonische URL ohne www: Google soll die Apex-Domain als
-// Hauptadresse führen (www liefert denselben Inhalt aus).
 export const metadata: Metadata = {
   alternates: { canonical: "/" },
 };
