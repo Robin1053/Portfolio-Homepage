@@ -82,7 +82,7 @@ const [command, ...args] = process.argv.slice(2);
 try {
   switch (command) {
     case "latest":
-      console.log(latest(args[0] ?? "V"));
+      console.log(latest(args[0] ?? "v"));
       break;
     case "next":
       console.log(next(args[0], args[1]));

@@ -23,6 +23,7 @@ jobs:
         with:
           fetch-depth: 0
           fetch-tags: true
+          ref: ${{ github.event.pull_request.merge_commit_sha }}
 
       - uses: ./.github/actions/compare-version
         id: compare
