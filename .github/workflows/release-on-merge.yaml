@@ -6,6 +6,9 @@ name: Release on version bump
       - closed
     branches:
       - main
+concurrency:
+  group: release
+  cancel-in-progress: false
 
 jobs:
   check-version:
