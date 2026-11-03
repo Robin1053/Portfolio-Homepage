@@ -7,7 +7,7 @@ description: >
 inputs:
   tag-prefix:
     description: Prefix der Release-Tags
-    default: V
+    default: v
 
 outputs:
   higher:

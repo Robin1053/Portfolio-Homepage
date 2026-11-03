@@ -1,13 +1,13 @@
 name: Version bump
 
-# Setzt bei jeder PR auf master automatisch die naechste CalVer-Version
+# Setzt bei jeder PR auf main automatisch die naechste CalVer-Version
 # (JJJJ.M.patch) in package.json und pusht den Bump-Commit in den PR-Branch.
 # Gleicher Monat wie der letzte Tag -> patch + 1, neuer Monat -> JJJJ.M.0.
 # Mit dem Label "no-release" wird nichts gebumpt (Version = letzter Tag).
 
 "on":
   pull_request:
-    branches: [master]
+    branches: [main]
     types: [opened, synchronize, reopened, labeled, unlabeled]
 
 concurrency:
